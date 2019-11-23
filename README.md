@@ -6,14 +6,15 @@ Cloud Native
 
 Kubernetes
 ---
-Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.  
+- a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
+- a tool used to manage or orchestrate clusters of containerized applications. 
 
 ### Concepts
 
 
 **Master:** The machine that controls Kubernetes nodes. This is where all task assignments originate. 
 
-**Node:** These machines perform the requested, assigned tasks. The Kubernetes master controls them.
+**Node:** These machines perform the requested, assigned tasks using one or more pods. The Kubernetes master controls them. 
 
 **Pod:** A group of one or more containers deployed to a single node. All containers in a pod share an IP address, IPC, hostname, and other resources. Pods abstract network and storage away from the underlying container. This lets you move containers around the cluster more easily.
 
@@ -62,3 +63,4 @@ Containers decouple applications from underlying host infrastructure to make dep
 
 ## References
 * https://kubernetes.io/docs/home/
+* https://phoenixnap.com/kb/understanding-kubernetes-architecture-diagrams 
