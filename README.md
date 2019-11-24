@@ -11,6 +11,7 @@ A tool used to manage or orchestrate clusters of containerized applications.
 ### Concepts
 
 
+
 - **Master:** The machine that controls Kubernetes nodes. This is where all task assignments originate. 
 
 - **Node:** These machines perform the requested, assigned tasks using one or more pods. The Kubernetes master controls them. 
@@ -19,6 +20,8 @@ A tool used to manage or orchestrate clusters of containerized applications.
 
 - **Container:** A lightweight and portable executable image that contains software and all of its dependencies.
 Containers decouple applications from underlying host infrastructure to make deployment easier in different cloud or OS environments, and for easier scaling.
+
+![Kubernetes Architecture and Components](./full-kubernetes-model-architecture.png)
 
 - **Control Plane:** The container orchestration layer that exposes the API and interfaces to define, deploy, and manage the lifecycle of containers.
 - **Data Plane:** The layer that provides capacity such as CPU, memory, network, and storage so that the containers can run and connect to a network. 
@@ -41,13 +44,12 @@ Containers decouple applications from underlying host infrastructure to make dep
 ### Deployment Strategies
 
 
-
-
+### Networkings
 
 ## Openshift
 
 ### Concepts
-
+![Kubernetes Architecture and Components](./full-kubernetes-model-architecture.png)
 ### Local Deployment
 
 ### Deployment Strategies
@@ -63,3 +65,5 @@ Containers decouple applications from underlying host infrastructure to make dep
 ## References
 * https://kubernetes.io/docs/home/
 * https://phoenixnap.com/kb/understanding-kubernetes-architecture-diagrams 
+* https://learn.openshift.com/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC 
+* https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727#:~:targetText=0.2%2C%20whose%20default%20gateway%20is,0.1.
