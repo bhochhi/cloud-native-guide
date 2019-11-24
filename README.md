@@ -6,8 +6,7 @@ Cloud Native
 
 Kubernetes
 ---
-- a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
-- a tool used to manage or orchestrate clusters of containerized applications. 
+A tool used to manage or orchestrate clusters of containerized applications. 
 
 ### Concepts
 
