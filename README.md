@@ -49,7 +49,7 @@ Containers decouple applications from underlying host infrastructure to make dep
 ## Openshift
 
 ### Concepts
-![Kubernetes Architecture and Components](./full-kubernetes-model-architecture.png)
+![Kubernetes Architecture and Components](./openshift-architecture.png)
 ### Local Deployment
 
 ### Deployment Strategies
