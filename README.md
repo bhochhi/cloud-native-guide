@@ -65,5 +65,6 @@ Containers decouple applications from underlying host infrastructure to make dep
 ## References
 * https://kubernetes.io/docs/home/
 * https://phoenixnap.com/kb/understanding-kubernetes-architecture-diagrams 
-* https://learn.openshift.com/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC 
+* interactive learning: https://learn.openshift.com/introduction
+* ebook: https://assets.openshift.com/hubfs/pdfs/OpenShift_for_Developers_Red_Hat.pdf?hsLang=en-us&extIdCarryOver=true&sc_cid=701f2000001Css5AAC
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727#:~:targetText=0.2%2C%20whose%20default%20gateway%20is,0.1.
