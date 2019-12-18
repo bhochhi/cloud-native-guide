@@ -6,28 +6,25 @@ Cloud Native
 
 Kubernetes
 ---
-A tool used to manage or orchestrate clusters of containerized applications. 
+A tool used to manage or orchestrate clusters of containerized applications.
 
 ### Concepts
 
+- **Master:** The machine that controls Kubernetes nodes. This is where all task assignments originate.
 
-
-- **Master:** The machine that controls Kubernetes nodes. This is where all task assignments originate. 
-
-- **Node:** These machines perform the requested, assigned tasks using one or more pods. The Kubernetes master controls them. 
+- **Node:** These machines perform the requested, assigned tasks using one or more pods. The Kubernetes master controls them.
 
 - **Pod:** A group of one or more containers deployed to a single node. All containers in a pod share an IP address, IPC, hostname, and other resources. Pods abstract network and storage away from the underlying container. This lets you move containers around the cluster more easily.
 
 - **Container:** A lightweight and portable executable image that contains software and all of its dependencies.
 Containers decouple applications from underlying host infrastructure to make deployment easier in different cloud or OS environments, and for easier scaling.
 
-![Kubernetes Architecture and Components](./full-kubernetes-model-architecture.png)
 
 - **Control Plane:** The container orchestration layer that exposes the API and interfaces to define, deploy, and manage the lifecycle of containers.
-- **Data Plane:** The layer that provides capacity such as CPU, memory, network, and storage so that the containers can run and connect to a network. 
+- **Data Plane:** The layer that provides capacity such as CPU, memory, network, and storage so that the containers can run and connect to a network.
 
 
-- **Cluster:** A set of machines, called nodes, that run containerized applications managed by Kubernetes. A cluster has at least one worker node and at least one master node. The worker node(s) host the pods that are the components of the application. The master node(s) manages the worker nodes and the pods in the cluster. Multiple master nodes are used to provide a cluster with failover and high availability. 
+- **Cluster:** A set of machines, called nodes, that run containerized applications managed by Kubernetes. A cluster has at least one worker node and at least one master node. The worker node(s) host the pods that are the components of the application. The master node(s) manages the worker nodes and the pods in the cluster. Multiple master nodes are used to provide a cluster with failover and high availability.
 
 - **Replication controller:**  This controls how many identical copies of a pod should be running somewhere on the cluster.
 
@@ -35,11 +32,52 @@ Containers decouple applications from underlying host infrastructure to make dep
 
 - **Kubelet:** This service runs on nodes and reads the container manifests and ensures the defined containers are started and running.
 
-- **kube-proxy:** kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept. kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster. 
+- **kube-proxy:** kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept. kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
 
 - **kubectl:** This is the command line configuration tool for Kubernetes.
 
+- **Dashboard**
+
+#### Why Kubernetes
+- Self-healing
+- Automated rollouts and rollbacks
+- Service discovery and load balancing
+- Storage orchestration
+- Secret and configuration management
+
+#### Kubernetes Components
+- When you deploy Kubernetes, you get a cluster.
+- A cluster is a set of machines, called nodes, that run containerized applications managed by Kubernetes.
+- A cluster has at least one worker node and at least one master node.
+- The worker node(s) host the pods that are the components of the application.
+- The master node(s) manages the worker nodes and the pods in the cluster.
+- Multiple master nodes are used to provide a cluster with failover and high availability.
+![Here’s the diagram of a Kubernetes cluster with all the components tied together.](./full-kubernetes-model-architecture.png)
+![diagram](https://d33wubrfki0l68.cloudfront.net/817bfdd83a524fed7342e77a26df18c87266b8f4/3da7c/images/docs/components-of-kubernetes.png)
+
+- Master Components:
+    - provide the cluster's control plane
+    - makes global decision for the cluster, like scheduling
+    - detects and respond to cluster events
+    *kube-apiserver*
+        - frontend for the kubernetes control plance
+        - exposes kubernetes API
+    *etcd*
+        - key value distributed store used as K8s backing store for all cluster data
+    *kube-scheduler*
+
+
+
+
+
+
+
 ### Local Deployment
+
+#### Kubernetes Web UI/Dashboard
+-
+
+
 
 ### Deployment Strategies
 
@@ -64,7 +102,8 @@ Containers decouple applications from underlying host infrastructure to make dep
 
 ## References
 * https://kubernetes.io/docs/home/
-* https://phoenixnap.com/kb/understanding-kubernetes-architecture-diagrams 
+* https://phoenixnap.com/kb/understanding-kubernetes-architecture-diagrams
 * interactive learning: https://learn.openshift.com/introduction
 * ebook: https://assets.openshift.com/hubfs/pdfs/OpenShift_for_Developers_Red_Hat.pdf?hsLang=en-us&extIdCarryOver=true&sc_cid=701f2000001Css5AAC
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727#:~:targetText=0.2%2C%20whose%20default%20gateway%20is,0.1.
+* https://platform9.com/wp-content/uploads/2019/04/The-Gorilla-Guide-to-Kubernetes-in-the-Enterprise.pdf
